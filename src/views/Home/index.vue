@@ -2,7 +2,7 @@
   <custom-header @create-account="handleAccountCreate" @login="handleLogin"/>
   <contact/>
   <div class="flex justify-center py-10 bg-brand-gray">
-    <p class="font-medium text-center text-gray-800">Feedback</p>
+    <p class="font-medium text-center text-gray-800">Feedback @2024</p>
   </div>
 </template>
 <script setup>

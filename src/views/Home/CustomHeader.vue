@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="flex flex-col w-4/5 max-w-6xl">
+    <div class="header-group">
       <div class="flex items-center justify-between py-10">
         <div class="w-28 lg:w-36">
           <img src="@/assets/images/logo_white.png" class="w-full"/>
@@ -29,5 +29,18 @@
 header {
   @apply bg-brand-main w-full flex justify-center;
   height: 700px;
+}
+
+.header-group {
+  @apply flex flex-col w-4/5 max-w-6xl;
+}
+
+@media (min-width: 640px) {
+  .header-group {
+    background-image: url('../../assets/images/blue_balloons.png');
+    background-size: 628px;
+    background-position: 90% 100%;
+    background-repeat: no-repeat;
+  }
 }
 </style>

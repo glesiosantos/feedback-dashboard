@@ -10,8 +10,10 @@ import CustomHeader from './CustomHeader.vue'
 import Contact from './Contact.vue'
 import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import useModal from '@/hooks/use_modal';
 
 const router = useRouter()
+const modal = useModal()
 
 onMounted(() => {
   const token = window.localStorage.getItem('token')
@@ -20,7 +22,12 @@ onMounted(() => {
   }
 })
 
-function handleLogin(){}
+function handleLogin(){
+  modal.open({
+    component: 'ModalFactor'
+  })
+}
+
 function handleAccountCreate(){}
 
 

@@ -7,7 +7,9 @@
         </div>
         <div class="flex">
           <button class="px-6 font-bold rounded-full text-white focus:outline-none">Criar Conta</button>
-          <button class="px-6 py-2 font-bold rounded-full bg-white text-brand-main focus:outline-none">Entrar</button>
+          <button
+          @click="() => $emit('login')"
+          class="px-6 py-2 font-bold rounded-full bg-white text-brand-main focus:outline-none">Entrar</button>
         </div>
       </div>
       <div class="flex flex-col mt-28">
